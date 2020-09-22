@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z28_Dll", "Z28_Dll\Z28_Dll.csproj", "{F376B218-E284-4027-B785-5EBF8F46515D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z28_Manager", "Z28_Manager\Z28_Manager.csproj", "{9D635331-7F27-40BD-AA4D-B22E800BBCA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F376B218-E284-4027-B785-5EBF8F46515D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F376B218-E284-4027-B785-5EBF8F46515D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F376B218-E284-4027-B785-5EBF8F46515D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F376B218-E284-4027-B785-5EBF8F46515D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D635331-7F27-40BD-AA4D-B22E800BBCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D635331-7F27-40BD-AA4D-B22E800BBCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D635331-7F27-40BD-AA4D-B22E800BBCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D635331-7F27-40BD-AA4D-B22E800BBCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DE8B4B2-7792-4D8F-9586-4EF59F8CF04F}
+	EndGlobalSection
+EndGlobal
