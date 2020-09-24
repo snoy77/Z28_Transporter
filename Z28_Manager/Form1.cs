@@ -16,23 +16,30 @@ namespace Z28_Manager
     public partial class Form1 : Form
     {
         Transporter transporter;
+        FileNameConstructor fileNameConstructor;
+
+        
 
         public Form1()
         {
             InitializeComponent();
             transporter = new Transporter();
+            fileNameConstructor = new FileNameConstructor();
             textBox1.Text = "deba\\2.txt";
-            textBox2.Text = "deba\\1\\2.txt";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            transporter.transportFiles(textBox1.Text, textBox2.Text);
+            transporter.transportFiles(textBox1.Text, textBox3.Text, false);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            transporter.transportFiles(textBox1.Text, textBox2.Text, true);
+            transporter.transportFiles(textBox1.Text, textBox3.Text, true);
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = fileNameConstructor.replaceFileNameInPath(textBox1.Text, textBox2.Text, radioButton1.Checked);
+        }
+
     }
 }
