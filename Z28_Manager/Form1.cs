@@ -26,6 +26,7 @@ namespace Z28_Manager
             transporter = new Transporter();
             fileNameConstructor = new FileNameConstructor();
             textBox1.Text = "deba\\2.txt";
+            textBox4.Text = "deba\\1\\";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,8 +39,8 @@ namespace Z28_Manager
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox3.Text = fileNameConstructor.replaceFileNameInPath(textBox1.Text, textBox2.Text, radioButton1.Checked);
+            textBox3.Text = fileNameConstructor.replaceFileNameInPath(textBox1.Text, textBox2.Text, checkBox1.Checked);
+            textBox5.Text = fileNameConstructor.replacePathToDirectory(textBox1.Text, textBox4.Text);
         }
-
     }
 }

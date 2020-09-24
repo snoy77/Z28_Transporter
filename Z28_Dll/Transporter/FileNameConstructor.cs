@@ -9,7 +9,7 @@ namespace Z28_Dll.Transporter
 {
     public class FileNameConstructor
     {
-        public string replaceFileNameInPath(string sourceFileName, string newFileName, bool addSourceFormat)
+        public string replaceFileNameInPath(string sourceFilePath, string newFileName, bool addSourceFormat)
         {
             //МЕТОД ЗАМЕНЯЕТ ТОЛЬКО ИМЯ ФАЙЛА В СТРОКЕ ПУТИ
 
@@ -18,17 +18,21 @@ namespace Z28_Dll.Transporter
 
             if (addSourceFormat)
             {
-                newFileName += Path.GetExtension(sourceFileName);//Добавление формата файла
+                newFileName += Path.GetExtension(sourceFilePath);//Добавление формата файла
             }
 
-            int indexofSlesh = sourceFileName.LastIndexOf('\\'); //Узнаю индекс последнего слеша
-            string pathToDirectory = sourceFileName.Substring(0, indexofSlesh+1); //путь до директории с слешем на конце
+            int indexofSlesh = sourceFilePath.LastIndexOf('\\'); //Узнаю индекс последнего слеша
+            string pathToDirectory = sourceFilePath.Substring(0, indexofSlesh+1); //путь до директории с слешем на конце
 
             string newPathFile = pathToDirectory + newFileName; //Подставляю новое имя файла к пути до директории
 
             return newPathFile;
         }
 
+        public string replacePathToDirectory(string sourceFilePath, string newPathDirectory)
+        {
+            return newPathDirectory + Path.GetFileName(sourceFilePath);
+        }
         public FileNameConstructor() { }
     }
 }
