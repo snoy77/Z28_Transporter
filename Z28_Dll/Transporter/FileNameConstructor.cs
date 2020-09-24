@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Z28_Dll.Transporter
 {
-    public class FileNameConstructor
+    public class PathRedactor
     {
         public string replaceFileNameInPath(string sourceFilePath, string newFileName, bool addSourceFormat)
         {
@@ -33,6 +33,6 @@ namespace Z28_Dll.Transporter
         {
             return newPathDirectory + Path.GetFileName(sourceFilePath);
         }
-        public FileNameConstructor() { }
+        public PathRedactor() { }
     }
 }

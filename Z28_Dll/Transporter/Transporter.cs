@@ -22,10 +22,15 @@ namespace Z28_Dll.Transporter
                 File.Copy(sourceFileName, pathTo);
             }
         }
-
-        public Transporter()
+        public void transportFiles(string[] sourceFileName, string pathTo, bool removeSourceFile)
         {
-
+            foreach (string el in sourceFileName)
+            {
+                this.transportFiles(el, pathTo, removeSourceFile);
+            }
         }
+
+        //КОНСТРУКТОРЫ
+        public Transporter() { }
     }
 }
